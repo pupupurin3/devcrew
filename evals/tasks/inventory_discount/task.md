@@ -1,0 +1,1 @@
+The inventory report overstates stock value: `Inventory.total_value()` ignores the per-category discounts defined in `pricing.py`. Make `total_value()` apply the discount for each item's category (categories with no discount use full price). Also make `Inventory.add` reject a negative quantity with `ValueError`. Keep `pricing.py` as the single source of discount rates.

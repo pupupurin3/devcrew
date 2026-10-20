@@ -1,0 +1,1 @@
+Users report that page 2 of search results repeats the last item of page 1, and the last page is sometimes missing. Fix `paginate` in `pager.py`. Pages are 1-indexed; a page past the end returns an empty list; `page < 1` or `per_page < 1` should raise `ValueError`.

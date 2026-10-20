@@ -1,0 +1,1 @@
+Add an optional `step` argument (a positive integer number of days, default 1) to `daterange` in `dates.py`, so `daterange(start, end, step=7)` yields every 7th day. The end date stays exclusive. A `step` of 0 or less raises `ValueError`. Update the docstring.

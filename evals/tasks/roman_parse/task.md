@@ -1,0 +1,1 @@
+`roman.py` can convert integers to Roman numerals. Add `from_roman(s)` that converts back. It should accept uppercase standard numerals for 1 to 3999 and raise `ValueError` for anything that is not a valid canonical numeral (for example "IIII", "VX", "IC", "", or lowercase input), so that `from_roman(to_roman(n)) == n` for every valid n.

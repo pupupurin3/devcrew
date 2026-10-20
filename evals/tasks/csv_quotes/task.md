@@ -1,0 +1,1 @@
+`parse_line` in `csvlite.py` splits a CSV line on commas, but it breaks on quoted fields. Make it follow the usual CSV quoting rules: a field wrapped in double quotes may contain commas, and a doubled quote (`""`) inside a quoted field is a literal quote. Do not use the standard library `csv` module; this package must stay dependency-free and we want to keep our own parser.
